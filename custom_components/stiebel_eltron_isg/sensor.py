@@ -40,6 +40,7 @@ from .const import (
     ACTUAL_TEMPERATURE_COOLING_FANCOIL,
     ACTUAL_TEMPERATURE_COOLING_SURFACE,
     ACTUAL_TEMPERATURE_FEK,
+    ACUTAL_TEMPERATURE_FE7,
     ACTUAL_TEMPERATURE_HK1,
     ACTUAL_TEMPERATURE_HK2,
     ACTUAL_TEMPERATURE_HK3,
@@ -98,6 +99,7 @@ from .const import (
     TARGET_TEMPERATURE_COOLING_FANCOIL,
     TARGET_TEMPERATURE_COOLING_SURFACE,
     TARGET_TEMPERATURE_FEK,
+    TARGET_TEMPERATURE_FE7,
     TARGET_TEMPERATURE_HK1,
     TARGET_TEMPERATURE_HK2,
     TARGET_TEMPERATURE_HK3,
@@ -200,6 +202,14 @@ SYSTEM_VALUES_SENSOR_TYPES = [
     create_temperature_entity_description(
         "Target Temperature FEK",
         TARGET_TEMPERATURE_FEK,
+    ),
+    create_temperature_entity_description(
+        "Actual Temperature FE7",
+        ACTUAL_TEMPERATURE_FE7,
+    ),
+    create_temperature_entity_description(
+        "Target Temperature FE7",
+        TARGET_TEMPERATURE_FE7,
     ),
     create_humidity_entity_description("Humidity", ACTUAL_HUMIDITY),
     create_humidity_entity_description("Humidity HK 1", ACTUAL_HUMIDITY_HK1),
